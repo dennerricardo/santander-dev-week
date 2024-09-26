@@ -8,16 +8,16 @@ classDiagram
     class BankUser {
         -String name
         -Account account
-        -List<Feature> features
+        -List[Features] features
         -Card card
-        -List<News> news
+        -List[News] news
     }
 
     class Account {
         -String number
         -String agency
-        -Float balance
-        -Float limit
+        -BigDecimal balance
+        -BigDecimal limit
     }
 
     class Feature {
@@ -27,7 +27,7 @@ classDiagram
 
     class Card {
         -String number
-        -Float limit
+        -BigDecimal limit
     }
 
     class News {
