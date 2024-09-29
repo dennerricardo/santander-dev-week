@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BankUserRepository extends JpaRepository<BankUser, Long> {
+
+    boolean existsByAccountNumber(String accountNumber);
 }
